@@ -20,7 +20,7 @@ spec:
       containers:
         - name: customerapi
 
-          image: your-dockerhub-username/customerapi:latest
+          image: varshithreddy144/customerapi:25600768171
 
           ports:
             - containerPort: 7003
