@@ -77,7 +77,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
 
-          git add kubernetes/customerapi/deployment.yml
+          git add kubernetes/k8scustomerapi/customerapi-k8s-deployment.yml
 
           git commit -m "[CI]: Update customerapi image tag" || echo "No changes to commit"
 
