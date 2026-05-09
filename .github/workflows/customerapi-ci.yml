@@ -70,7 +70,7 @@ jobs:
 
       - name: Update Kubernetes Deployment Manifest
         run: |
-          sed -i "s|image: .*|image: ${{ secrets.DOCKER_USERNAME }}/customerapi:${{ github.run_id }}|" kubernetes/customerapi/deployment.yml
+          sed -i "s|image: .*|image: ${{ secrets.DOCKER_USERNAME }}/customerapi:${{ github.run_id }}|" kubernetes/k8scustomerapi/customerapi-k8s-deployment.yml
 
       - name: Commit and Push Changes
         run: |
